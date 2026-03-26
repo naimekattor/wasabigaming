@@ -60,7 +60,7 @@ export default function HomePage() {
         {/* CTA Button */}
         <div className="w-full flex justify-center opacity-0 animate-fade-up [animation-delay:0.6s]">
           <a
-            href="https://asplringlegalnetwork.fillout.com/t/7CKLwI828Zus"
+            href="https://aspiringlegalnetwork.fillout.com/t/7CKLwi828Zus"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2.5 bg-yellow text-black font-extrabold text-[0.8rem] sm:text-[0.9rem] uppercase tracking-wider py-3.5 sm:py-4 px-6 sm:px-10 rounded-xl transition-all duration-300 hover:scale-[1.05] hover:shadow-[0_0_30px_rgba(255,230,0,0.4)] active:scale-95 shadow-[0_4px_16px_rgba(255,230,0,0.18),3px_3px_0_rgba(0,0,0,0.5)] w-full max-w-[260px] sm:max-w-none sm:w-auto"
