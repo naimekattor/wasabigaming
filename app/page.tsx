@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Countdown from "@/components/Countdown";
+import Image from "next/image";
 
 // ── Configure your launch date here ──────────────────────────────────────
-const LAUNCH_DATE = new Date("2025-09-01T00:00:00");
+const LAUNCH_DATE = new Date("2026-09-01T00:00:00");
 // ─────────────────────────────────────────────────────────────────────────
 
 export default function HomePage() {
@@ -27,7 +27,7 @@ export default function HomePage() {
             alt="Aspiring Legal Network"
             width={240}
             height={96}
-            className="h-24 w-auto rounded-[14px] block drop-shadow-[0_4px_24px_rgba(255,230,0,0.3)] transition-[filter,transform] duration-300 hover:drop-shadow-[0_6px_36px_rgba(255,230,0,0.5)] hover:scale-[1.04] hover:-rotate-1"
+            className="h-24 w-auto rounded-[14px] block drop-shadow-[0_4px_24px_rgba(255,230,0,0.3)] transition-[filter,transform] duration-300 hover:drop-shadow-[0_6px_36px_rgba(255,230,0,0.5)] hover:scale(1.04) hover:-rotate-1"
             priority
           />
         </div>
@@ -53,15 +53,27 @@ export default function HomePage() {
         </p>
 
         {/* Countdown */}
-        <div className="opacity-0 animate-fade-up [animation-delay:0.46s]">
+        <div className="opacity-0 animate-fade-up [animation-delay:0.46s] mb-10">
           <Countdown targetDate={LAUNCH_DATE} />
         </div>
 
+        {/* CTA Button */}
+        <div className="opacity-0 animate-fade-up [animation-delay:0.6s]">
+          <a
+            href="https://asplringlegalnetwork.fillout.com/t/7CKLwI828Zus"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2.5 bg-yellow text-black font-extrabold text-[0.9rem] uppercase tracking-wider py-4 px-10 rounded-xl transition-all duration-300 hover:scale-[1.05] hover:shadow-[0_0_30px_rgba(255,230,0,0.4)] active:scale-95 shadow-[0_4px_16px_rgba(255,230,0,0.18),3px_3px_0_rgba(0,0,0,0.5)]"
+          >
+            Join Community ★
+          </a>
+        </div>
+
         {/* Divider */}
-        <div className="w-full h-px bg-[linear-gradient(90deg,transparent,rgba(255,230,0,0.32),transparent)] my-8 opacity-0 animate-fade-up [animation-delay:0.72s]" />
+        <div className="w-full h-px bg-[linear-gradient(90deg,transparent,rgba(255,230,0,0.32),transparent)] my-8 opacity-0 animate-fade-up [animation-delay:0.75s]" />
 
         {/* Status Message */}
-        <div className="w-full flex flex-col items-center gap-3.5 opacity-0 animate-fade-up [animation-delay:0.8s]">
+        <div className="w-full flex flex-col items-center gap-3.5 opacity-0 animate-fade-up [animation-delay:0.85s]">
           <p className="text-[0.875rem] text-muted text-center italic">Be prepared for the revolution.</p>
         </div>
       </div>

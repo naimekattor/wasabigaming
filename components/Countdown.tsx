@@ -74,9 +74,10 @@ export default function Countdown({ targetDate }: CountdownProps) {
     };
   }, [targetDate]);
 
-  const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(calculate);
+  const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
 
   useEffect(() => {
+    setTimeLeft(calculate());
     const id = setInterval(() => setTimeLeft(calculate()), 1000);
     return () => clearInterval(id);
   }, [calculate]);
