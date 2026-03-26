@@ -4,7 +4,7 @@ import Countdown from "@/components/Countdown";
 import Image from "next/image";
 
 // ── Configure your launch date here ──────────────────────────────────────
-const LAUNCH_DATE = new Date("2026-07-01T00:00:00");
+const LAUNCH_DATE = new Date("2026-06-01T00:00:00");
 // ─────────────────────────────────────────────────────────────────────────
 
 export default function HomePage() {
