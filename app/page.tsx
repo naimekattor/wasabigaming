@@ -18,7 +18,7 @@ export default function HomePage() {
       </div>
 
       {/* ── Card ────────────────────────────────────────────────── */}
-      <div className="w-full max-w-[660px] bg-card border border-border rounded-card p-12 px-6 sm:px-11 pb-11 shadow-[0_0_0_1px_rgba(255,230,0,0.14),0_40px_80px_rgba(0,0,0,0.75),0_0_80px_rgba(255,230,0,0.04)] flex flex-col items-center relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-[linear-gradient(90deg,transparent,#FFE600,transparent)] animate-fade-up">
+      <div className="w-full max-w-[660px] bg-card border border-border rounded-card p-8 sm:p-12 px-5 sm:px-11 pb-10 sm:pb-11 shadow-[0_0_0_1px_rgba(255,230,0,0.14),0_40px_80px_rgba(0,0,0,0.75),0_0_80px_rgba(255,230,0,0.04)] flex flex-col items-center relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-[linear-gradient(90deg,transparent,#FFE600,transparent)] animate-fade-up">
 
         {/* Logo */}
         <div className="mb-7 opacity-0 animate-fade-up [animation-delay:0.05s]">
@@ -27,43 +27,43 @@ export default function HomePage() {
             alt="Aspiring Legal Network"
             width={240}
             height={96}
-            className="h-24 w-auto rounded-[14px] block drop-shadow-[0_4px_24px_rgba(255,230,0,0.3)] transition-[filter,transform] duration-300 hover:drop-shadow-[0_6px_36px_rgba(255,230,0,0.5)] hover:scale(1.04) hover:-rotate-1"
+            className="h-20 sm:h-24 w-auto rounded-[12px] sm:rounded-[14px] block drop-shadow-[0_4px_24px_rgba(255,230,0,0.3)] transition-[filter,transform] duration-300 hover:drop-shadow-[0_6px_36px_rgba(255,230,0,0.5)] hover:scale(1.04) hover:-rotate-1"
             priority
           />
         </div>
 
         {/* Eyebrow */}
-        <p className="inline-flex items-center gap-[7px] bg-[rgba(255,230,0,0.09)] border border-border-strong rounded-full py-1.5 px-4 text-[0.67rem] font-bold tracking-[0.16em] uppercase text-yellow mb-4.5 opacity-0 animate-fade-up [animation-delay:0.12s]">
+        <p className="inline-flex items-center gap-[7px] bg-[rgba(255,230,0,0.09)] border border-border-strong rounded-full py-1.5 px-4 text-[0.62rem] sm:text-[0.67rem] font-bold tracking-[0.16em] uppercase text-yellow mb-4 sm:mb-4.5 opacity-0 animate-fade-up [animation-delay:0.12s]">
           <span className="animate-star-pulse inline-block">★</span>
           Launching Soon
           <span className="animate-star-pulse inline-block">★</span>
         </p>
 
         {/* Headline */}
-        <h1 className="font-display text-[clamp(2.5rem,11vw,5.8rem)] leading-[0.94] text-center text-text mb-2 tracking-[0.02em] uppercase opacity-0 animate-fade-up [animation-delay:0.22s]">
+        <h1 className="font-display text-[clamp(2.4rem,10vw,5.8rem)] leading-[0.94] text-center text-text mb-2 tracking-[0.02em] uppercase opacity-0 animate-fade-up [animation-delay:0.22s]">
           Something Big
           <span className="text-yellow block [text-shadow:3px_3px_0_rgba(0,0,0,0.6),0_0_40px_rgba(255,230,0,0.35)]">is Coming</span>
         </h1>
 
         {/* Subtext */}
-        <p className="text-[0.95rem] leading-[1.7] text-muted text-center max-w-[520px] mb-10 opacity-0 animate-fade-up [animation-delay:0.34s]">
+        <p className="text-[0.9rem] sm:text-[0.95rem] leading-[1.6] sm:leading-[1.7] text-muted text-center max-w-[520px] mb-8 sm:mb-10 opacity-0 animate-fade-up [animation-delay:0.34s]">
           Transforming legal careers through an AI-powered ecosystem of career 
           tools, structured learning, and professional collaboration. Built for 
           the next generation of legal talent. Est. 2024.
         </p>
 
         {/* Countdown */}
-        <div className="opacity-0 animate-fade-up [animation-delay:0.46s] mb-10">
+        <div className="w-full opacity-0 animate-fade-up [animation-delay:0.46s] mb-8 sm:mb-10">
           <Countdown targetDate={LAUNCH_DATE} />
         </div>
 
         {/* CTA Button */}
-        <div className="opacity-0 animate-fade-up [animation-delay:0.6s]">
+        <div className="w-full flex justify-center opacity-0 animate-fade-up [animation-delay:0.6s]">
           <a
             href="https://asplringlegalnetwork.fillout.com/t/7CKLwI828Zus"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 bg-yellow text-black font-extrabold text-[0.9rem] uppercase tracking-wider py-4 px-10 rounded-xl transition-all duration-300 hover:scale-[1.05] hover:shadow-[0_0_30px_rgba(255,230,0,0.4)] active:scale-95 shadow-[0_4px_16px_rgba(255,230,0,0.18),3px_3px_0_rgba(0,0,0,0.5)]"
+            className="flex items-center justify-center gap-2.5 bg-yellow text-black font-extrabold text-[0.8rem] sm:text-[0.9rem] uppercase tracking-wider py-3.5 sm:py-4 px-6 sm:px-10 rounded-xl transition-all duration-300 hover:scale-[1.05] hover:shadow-[0_0_30px_rgba(255,230,0,0.4)] active:scale-95 shadow-[0_4px_16px_rgba(255,230,0,0.18),3px_3px_0_rgba(0,0,0,0.5)] w-full max-w-[260px] sm:max-w-none sm:w-auto"
           >
             Join Community ★
           </a>
