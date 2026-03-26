@@ -53,7 +53,7 @@ export default function HomePage() {
         </p>
 
         {/* Countdown */}
-        <div className="w-full opacity-0 animate-fade-up [animation-delay:0.46s] mb-8 sm:mb-10">
+        <div className="w-full opacity-0 animate-fade-up [animation-delay:0.46s] mb-4 sm:mb-10">
           <Countdown targetDate={LAUNCH_DATE} />
         </div>
 
