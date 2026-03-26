@@ -70,7 +70,7 @@ export default function HomePage() {
         </div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-[linear-gradient(90deg,transparent,rgba(255,230,0,0.32),transparent)] my-8 opacity-0 animate-fade-up [animation-delay:0.75s]" />
+        <div className="w-full h-px bg-[linear-gradient(90deg,transparent,rgba(255,230,0,0.32),transparent)] my-4 opacity-0 animate-fade-up [animation-delay:0.75s]" />
 
         {/* Status Message */}
         <div className="w-full flex flex-col items-center gap-3.5 opacity-0 animate-fade-up [animation-delay:0.85s]">
